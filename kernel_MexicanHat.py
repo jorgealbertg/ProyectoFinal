@@ -42,5 +42,5 @@ def calc_ker(I, Is, K, sigma, verbose=False):
 
     plt.subplot(3,3,2)
     plt.imshow(J1)
-    plt.xlabel('Sharpen filter')
+    plt.xlabel('Mexican Hat filter')
     return KR
