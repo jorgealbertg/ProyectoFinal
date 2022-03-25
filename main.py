@@ -4,7 +4,7 @@ from PIL import Image
 from scipy import ndimage
 
 import kernel_sharpen 
-import kernel_gaussian
+import gaussian
 import kernel_MexicanHat
 
 Is = Image.open('Img.png');
@@ -13,5 +13,5 @@ I = numpy.asarray(I);
 I = I / 255.0;
 
 kernel_sharpen.kernel_1(I,Is);
-kernel_gaussian.kernel_gaussian(I,Is);
-kernel_MexicanHat.kernel_MexicanHat(I,Is);
+kernel_gaussian.gaussian(I,Is,15,15);
+kernel_MexicanHat.calc_ker(I,Is,5,2);
