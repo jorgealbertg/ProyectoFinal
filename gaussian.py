@@ -49,7 +49,7 @@ I = I / 255.0;
 
 """Seleccionar los kernels y aplicar la convolucion"""
 
-def gaussian(Is, Ig, sigma, size):
+def gaussian(I, Is, sigma, size):
   A= numpy.zeros((size,size))
   
   for x in range(-size//2,size//2+1):
