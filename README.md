@@ -11,11 +11,11 @@
 
 [TOC]
 
-#Objetivo
+# Objetivo
 
 El objetivo de esta entrega es aplicar filtros a una imagen cualuiera mediante la implementacion de funciones kernel en python.
 
-#Desarrollo
+# Desarrollo
 La mayoria de los filtros usan matriz de convolución. Con este filtro, se pueden personalizar de distintas formas. El filtro matriz de convolución usa una primera matriz que es la imagen que será tratada. La imagen es una colección bidimensional de píxeles en coordenada rectágular y el kernel usado dependerá del efecto deseado.
 El filtro examina, sucesivamente, cada píxel de la imagen, para cada uno de ellos, que llamaremos “píxeles iniciales”, se multiplica el valor de este píxel y el valor de los 8 circundantes por el valor correspondiente del kernel. Entonces se añade el resultado, y el píxel inicial se regula en este valor resultante final.
 
@@ -26,7 +26,7 @@ A la izquierda, la imagen de la matriz: cada píxel está marcado con su valor. 
 
 Para poder hacer la actividad, primero tuvimos que investigar que tipos de filtro kernel queriamos aplicar y con que ecuaciones se puede lograr. Posteriormente las implementamos en python y mediante un codigo main mandamos a llamar todas y asi desplegar las imagenes.
 
-#Kernel 1
+# Kernel 1
 ### Mexican Hat
 Para el desarrollo de este kernel, se utiliza la ecuacion de Ricker Wavelet:
 ![](https://drive.google.com/uc?id=1cOwp_l9uLp3ITVvf6hAoy2vWqjQI9sbb)
@@ -66,8 +66,8 @@ def calc_ker(I, Is, K, sigma, verbose=False):
 Imagen con filtro:
 ![](https://drive.google.com/uc?id=1a0dPkrE4EzmGNYDOzvCRP9uRm155evOt)
 
-#Kernel 2
-####Gaussian Blur
+# Kernel 2
+#### Gaussian Blur
 En el procesamiento de imágenes, el “Gaussian Blur” es el resultado de desenfocar una imagen mediante una función gaussiana (llamada así por el matemático y científico Carl Friedrich Gauss).
 Es un efecto muy utilizado en el software de gráficos, normalmente para reducir el ruido de la imagen y reducir los detalles. El efecto visual de esta técnica es un suave desenfoque que se asemeja al de ver la imagen a través de una pantalla translúcida.
 El “Gaussian Blur” también se utiliza como etapa de preprocesamiento en los algoritmos de visión por ordenador para mejorar las estructuras de la imagen a diferentes escalas.
@@ -99,8 +99,8 @@ Imagen con filtro:
 
 ![](https://drive.google.com/uc?id=1ZFsQTEpm1bzw824ukytbrz5hPDTfYkL2)
 
-#Kernel 3
-####Sharpen
+# Kernel 3
+#### Sharpen
 “Sharpening” es otra de las operaciones de imagen más comunes. Esta técnica se utiliza para resaltar los detalles de una imagen mejorando el contraste de los píxeles en los bordes. El kernel puede construirse añadiendo la imagen de origen a la salida del detector de bordes, produciendo una imagen en la que los bordes son más aparentes. El efecto de nitidez puede controlarse introduciendo un parámetro de cantidad que escala la contribución:
 
 Kernel:
@@ -132,7 +132,7 @@ def gaussian(I, Is, sigma, size):
 Imagen con filtro:
 
 ![](https://drive.google.com/uc?id=1EjeemMzIzGKEA4KmOgAJ-eB0g_ruvGXi)
-#Main
+# Main
 El codigo main es bastante simple, lo unico que hacemos es establecer una imagen a modificar y mandar a llamar los demas archivos donde estan las funciones con cada filtro . Ya por ultimo es le aplica  cada filtro a la imagen y se desplega.
 
 Codigo main:
@@ -155,5 +155,5 @@ kernel_sharpen.kernel_1(I,Is);
 gaussian.gaussian(I,Is,15,15);
 kernel_MexicanHat.calc_ker(I,Is,5,2);
 ```
-#End
+# End
 
