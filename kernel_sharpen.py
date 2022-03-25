@@ -22,3 +22,5 @@ def kernel_1(I, Is):
     plt.subplot(3,3,2)
     plt.imshow(J1)
     plt.xlabel('Sharpen filter')
+    
+    return k1
