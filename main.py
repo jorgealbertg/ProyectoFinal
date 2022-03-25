@@ -7,7 +7,7 @@ import kernel_sharpen
 import gaussian
 import kernel_MexicanHat
 
-Is = Image.open('Img.png');
+Is = Image.open('Img.jpg');
 I = Is.convert('L');
 I = numpy.asarray(I);
 I = I / 255.0;
