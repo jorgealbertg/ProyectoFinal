@@ -5,12 +5,6 @@
 - Jose Pablo Gonzalez Poblette
 - Jorge Alberto Garcia Estudillo
 
-**Contenido**
-
-[TOCM]
-
-[TOC]
-
 # Objetivo
 
 El objetivo de esta entrega es aplicar filtros a una imagen cualuiera mediante la implementacion de funciones kernel en python.
