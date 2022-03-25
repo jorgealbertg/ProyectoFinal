@@ -9,7 +9,7 @@ I = numpy.asarray(I);
 I = I / 255.0;
 '''
 def kernel_1(I, Is):
-    k1 = numpy.array([[0,-1,0],[-1,5,-1],[0,-1,0]])
+    k1 = numpy.array([[0,-1,0],[-1,7,-1],[0,-1,0]])
 
     J1 = ndimage.convolve(I, k1, mode='constant', cval=0.0)
 
