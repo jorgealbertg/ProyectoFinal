@@ -1,3 +1,0 @@
-# ProyectoFinal
-
-## la explicacion
