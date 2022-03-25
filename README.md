@@ -66,6 +66,7 @@ En el procesamiento de imágenes, el “Gaussian Blur” es el resultado de dese
 Es un efecto muy utilizado en el software de gráficos, normalmente para reducir el ruido de la imagen y reducir los detalles. El efecto visual de esta técnica es un suave desenfoque que se asemeja al de ver la imagen a través de una pantalla translúcida.
 El “Gaussian Blur” también se utiliza como etapa de preprocesamiento en los algoritmos de visión por ordenador para mejorar las estructuras de la imagen a diferentes escalas.
 
+
 Ecuacion Gaussian Blur:
 ```python
 $g(x,y) = \frac{1}{2\pi\sigma^2} e^{-\frac{x^2+y^2}{2\sigma^2}}$
