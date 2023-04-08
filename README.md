@@ -1,6 +1,6 @@
 # Entrega Final Semana tec
 
-### Integantes
+### Integrantes
 - Giuliana Sofia Islas Carbaja
 - Jose Pablo Gonzalez Poblette
 - Jorge Alberto Garcia Estudillo
